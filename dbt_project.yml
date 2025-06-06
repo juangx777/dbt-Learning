@@ -40,7 +40,5 @@ models:
     # Applies to all files under models/example/
     marts:
       materialized: table
-    legacy:
-      materialized: table
     staging:
       materialized: view
