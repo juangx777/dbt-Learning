@@ -1,0 +1,50 @@
+
+
+{#
+    {% set my_first_string = 'Jinja test' %}
+    {% set my_first_int = 100 %}
+
+    I have build {{my_first_string}} and {{my_first_int}}
+
+
+{% set my_animal_list = ['cat', 'dog', 'fish'] %}
+
+{% for i in my_animal_list %}
+
+    my fav animal is the {{i}}
+
+{% endfor%}
+
+
+
+
+{% set temperature = 45 %}
+
+{% if temperature < 60 %}
+    Time for latte
+{% else %}
+    Time for cold brew
+{% endif %}
+
+
+
+
+{%- set food_list = ['rice', 'bread', 'vegs'] -%}
+
+{%- for food in food_list -%}
+    {%- if food == 'rice' -%}
+        {%- set food_type = 'asian' -%}
+    {%- else -%}
+        {%- set food_type = 'american' -%}
+    {%- endif -%}
+
+    The {{food}} is {{food_type}}
+
+{% endfor %}
+
+#}
+
+
+
+
+
